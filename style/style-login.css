@@ -1,0 +1,120 @@
+:root {
+    --main-bg-color: rgb(6, 208, 1);
+    --body-bg-color: rgb(2, 21, 38);
+    --login-div-bg-color: rgb(24, 18, 43);
+    --footer-div-bg-color: rgb(88, 86, 99);
+  }
+
+*{
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+
+.container-center{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.box-center{
+    border-radius: 5px;
+    background-color: var(--main-bg-color);
+    border: 1px solid black;
+    width: 25vw;
+    height: 30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.267)
+    
+}
+
+.login-div{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    height: 29vh;
+    background-color: var(--login-div-bg-color);
+}
+
+.login-box{
+    width: 15vw;
+    height: 3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.3vw;
+    border-radius: 5px;
+    border: none;
+}
+.subimit-button{
+    width: 8vw;
+    height: 4vh;
+    font-size: 700;
+    border: none;
+}
+
+.login-title{
+    color: aliceblue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-nav{
+    background-color: var(--main-bg-color);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    border: none;
+    
+}
+
+.nav-login{
+    margin-left: 3px;
+    font-size: 45px;
+    filter: drop-shadow(1px 1px 5px aliceblue);
+}
+
+#icon-lock{
+    font-size: 35px;
+    margin: none;
+    filter: drop-shadow(1px 1px 5px aliceblue);
+    
+}
+
+.footer-div{
+    border-top: solid rgb(255, 255, 255);
+    height: 20%;
+    align-items: center;
+    display: flex;
+}
+
+#footer-text-p{
+    text-align: justify;
+    max-width: 45vw;
+    display: inline;
+    margin-left: 2%;
+    color: var(--footer-div-bg-color);
+}
