@@ -33,35 +33,6 @@ Bem-vindo ao **SafeLock**, o seu gerenciador de senhas seguro e confiável. O Sa
 
 ---
 
-
-
-## Contribuição 🤝
-
-Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
-
-1. Faça um fork do projeto. 🍴
-2. Crie uma branch para sua feature:
-
-   ```bash
-   git checkout -b feature/NovaFeature
-   ```
-
-3. Commit suas mudanças:
-
-   ```bash
-   git commit -m 'Adicionando NovaFeature'
-   ```
-
-4. Envie para a branch:
-
-   ```bash
-   git push origin feature/NovaFeature
-   ```
-
-5. Abra um Pull Request. 🚀
-
----
-
 ## Licença 📄
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
