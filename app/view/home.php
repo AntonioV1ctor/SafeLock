@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
+    header('Location: ../../index.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeLock</title>
-    <link rel="stylesheet" href="style/style-login.css">
+    <link rel="stylesheet" href="../../style/style-home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
@@ -24,37 +31,11 @@
                 </div>
             </nav>
         </head>
-        <?php
-        session_start();
-        if ($_POST["email_"] == "phantombyte@root" && $_POST["password_"] == "12345") {
-            $_SESSION['autenticado'] = true;
-            header("Location: app/view/home.php");
-            exit();
-        }else{
-        ?>
-
-
-        <div class="container-center">
-            <div class="box-center">
-                <h1 class="login-title">Login</h1>
-                <div class="login-div">
-                    <form action="index.php" method="post">
-                        <?php echo "<r>Preencha todos os campos corretamente</r>" ; } ?>
-                        <span>
-                            <i id="icon-email" class="fa-solid fa-envelope"></i>
-                        </span>
-                        <input class="login-box" type="email" required placeholder="E-mail" name="email_">
-                        <span>
-                            <i id="icon-paswd" class="fa-solid fa-key"></i>
-                        </span>
-                        <input class="login-box" type="password" required placeholder="Password" name="password_">
-                        <input class=" subimit-button" type="submit" value="Logar">
-                    </form>
-                </div>
+        <div class="container-home">
+            <div class="box-home">
+                <h1>test</h1>
             </div>
         </div>
-
-
         <footer>
             <div class="footer-div">
                 <p id="footer-text-p">

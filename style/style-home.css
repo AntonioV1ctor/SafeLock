@@ -27,8 +27,7 @@ footer{
 body{
     background-color: var(--body-bg-color);
 }
-
-.container-center{
+.container-home{
     width: 100%;
     height: 100vh;
     justify-content: center;
@@ -37,7 +36,7 @@ body{
     
 }
 
-.box-center{
+.box-home{
     border-radius: 5px;
     background-color: var(--main-bg-color);
     border: 1px solid black;
@@ -50,54 +49,6 @@ body{
    
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.267)
     
-}
-
-.login-div{
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    width: 100%;
-    height: 29vh;
-    background-color: var(--login-div-bg-color);
-}
-
-
-.login-box{
-    width: 15vw;
-    height: 3.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0.3vw;
-    border-radius: 5px;
-    border: none;
-}
-.subimit-button{
-    width: 8vw;
-    height: 4vh;
-    font-size: 700;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.subimit-button:hover{
-    background-color: var(--shadow-color);
-    color: white;
-    scale: 105%;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.267);
-}
-
-.login-title{
-    color: aliceblue;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .box-nav{
@@ -119,28 +70,9 @@ form{
 #icon-lock{
     font-size: 35px;
     margin: none;
-    filter: drop-shadow(1px 1px 5px aliceblue);
-    
+    filter: drop-shadow(1px 1px 5px aliceblue);  
 }
 
-#icon-email{
-    position: absolute;
-    z-index: 2;
-    margin-left: 8vw;
-    margin-top: 0.8vw;
-    scale: 150%;
-    color: var(--text-color);
-
-}
-
-#icon-paswd{
-    position: absolute;
-    z-index: 2;
-    margin-left: 8vw;
-    margin-top: 0.8vw;
-    scale: 150%;
-    color: var(--text-color);
-}
 
 .footer-div{
     border-top: solid rgb(255, 255, 255);
@@ -163,8 +95,4 @@ form{
     display: inline;
     margin-left: 2%;
     color: var(--footer-div-bg-color);
-}
-
-r{
-    color: var(--text-alert-color);
 }
